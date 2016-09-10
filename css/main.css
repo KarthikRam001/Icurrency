@@ -1,0 +1,173 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+.container {
+	max-width: 600px;
+	margin:0px auto;
+}
+
+body {
+	font-family: "Roboto", helvetica, arial, sans-serif;
+	background: mediumaquamarine;
+}
+.text-center{
+	text-align: center;
+}
+
+.text-vertical-center-container{
+	height: 320px;
+	display: table;
+	width: 100%;
+	text-align: center
+}
+.text-vertical-center{
+	display: table-cell;
+	vertical-align: middle;
+}
+h2{
+	color: #fafafa;
+	font-size: 30px;
+	font-weight: 400;
+	font-style:normal;
+	font-family: "Roboto", helvetica, arial, sans-serif;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+	text-transform:uppercase;
+}
+
+/*====================================================
+                     The Table
+                     ======================================================*/
+
+                     #currencyTable {
+                     	background: white;
+                     	border-radius:3px;
+                     	border-collapse: collapse;
+                     	height: 320px;
+                     	margin: auto;
+                     	max-width: 600px;
+                     	padding:5px;
+                     	width: 100%;
+                     	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                     	animation: float 5s infinite;
+                     }
+
+                     th {
+                     	color:#D5DDE5;
+                     	background:#1b1e24;
+                     	border-bottom:4px solid #9ea7af;
+                     	border-right: 1px solid #343a45;
+                     	font-size:23px;
+                     	font-weight: 100;
+                     	padding:24px;
+                     	text-align:center;
+                     	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                     	vertical-align:middle;
+                     }
+
+                     th:first-child {
+                     	border-top-left-radius:3px;
+                     }
+
+                     th:last-child {
+                     	border-top-right-radius:3px;
+                     	border-right:none;
+                     }
+
+                     tr {
+                     	border-top: 1px solid #C1C3D1;
+                     	border-bottom-: 1px solid #C1C3D1;
+                     	color:#666B85;
+                     	font-size:16px;
+                     	font-weight:normal;
+                     	text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+                     }
+
+                     tr:hover td {
+                     	background:#4E5066;
+                     	color:#FFFFFF;
+                     	border-top: 1px solid #22262e;
+                     	border-bottom: 1px solid #22262e;
+                     }
+
+                     tr:first-child {
+                     	border-top:none;
+                     	height: 94px;
+                     }
+
+                     tr:last-child {
+                     	border-bottom:none;
+                     }
+
+                     tr:nth-child(odd) td {
+                     	background:#EBEBEB;
+                     }
+
+                     tr:nth-child(odd):hover td {
+                     	background:#4E5066;
+                     }
+
+                     tr:last-child td:first-child {
+                     	border-bottom-left-radius:3px;
+                     }
+
+                     tr:last-child td:last-child {
+                     	border-bottom-right-radius:3px;
+                     }
+
+                     td {
+                     	background:#FFFFFF;
+                     	padding:20px;
+                     	text-align:center;
+                     	vertical-align:middle;
+                     	font-weight:300;
+                     	font-size:18px;
+                     	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+                     	border-right: 1px solid #C1C3D1;
+
+                     }
+
+                     td:last-child {
+                     	border-right: 0px;
+                     }
+                     button{
+                     	border: none;
+                     	padding: 5px 10px;
+                     	background: darkturquoise;
+                     }
+
+/*====================================================
+                     reload button
+                     ======================================================*/
+                     .reloadButton {
+                     	height: 2em;
+                     	padding: .25em;
+                     	width: 2em;
+                     	position: relative;
+                     }
+                     .reloadButton:before, .reloadButton:after {
+                     	content: '';
+                     	display: block;
+                     }
+/*====================================================
+                     The arc
+                     ======================================================*/
+                     .reloadButton:before {
+                     	border-color: transparent #fff #fff #fff;
+                     	border-radius: 50%;
+                     	border-style: solid;
+                     	border-width: .125em;
+                     	height: 1.5em;
+                     	width: 1.5em;
+                     }
+/*====================================================
+                     the arrow
+                     ======================================================*/
+                     .reloadButton:after {
+                     	border-color: transparent transparent transparent #fff;
+                     	border-style: solid;
+                     	border-width: .3125em 0 .3125em .5em;
+                     	height: 0;
+                     	position: absolute;
+                     	top: 1px;
+                     	left: 22%;
+                     	width: 0;
+                     	transform: rotate(-40deg);
+                     }
